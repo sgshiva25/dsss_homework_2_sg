@@ -27,9 +27,9 @@ def generate_problem(num_1, num_2, oper):
     
     problem = f"{num_1} {oper} {num_2}"
     
-    if operator == '+':
+    if oper == '+':
         ans = num_1 + num_2
-    elif operator == '-':
+    elif oper == '-':
         ans = num_1 - num_2
     else:
         ans = num_1 * num_2
@@ -48,7 +48,7 @@ def math_quiz():
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
-    for _ in range(t_q):
+    for _ in range(num_ques):
         number1 = get_random_number(1, 10)
         number2 = get_random_number(1, 5)
         operator = get_random_operator()
